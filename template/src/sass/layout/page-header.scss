@@ -1,0 +1,19 @@
+@use "../ds-system/ds-colors";
+@use "../ds-system/ds-typography";
+
+.page-header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1340px;
+
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  &__logo {
+    margin-right: 210px;
+  }
+}

@@ -1,0 +1,21 @@
+@use 'ds-system/ds-colors.scss';
+
+.page {
+    height: 100%;
+
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: ds-colors.$black-900;
+  
+    text-rendering: optimizeLegibility;
+}
+
+.page__body {
+    margin: 0;
+  
+    min-width: 1024px;
+
+    background-color: ds-colors.$green-400;
+    background: radial-gradient(256.01% 100.02% at 0% 55.5%, ds-colors.$white-900 0%, ds-colors.$green-400 100%, ds-colors.$green-600 100%);
+}

@@ -1,0 +1,57 @@
+@use 'ds-system/ds-colors.scss';
+@use 'ds-system/ds-typography.scss';
+
+.main-nav {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;   
+        margin: 0 auto;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        margin-right: 130px;
+
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+    }
+
+    &__item--active {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: ds-colors.$green-800;
+        }        
+    }
+
+    a {
+        @include ds-typography.xl-s22-h33;
+        color: ds-colors.$black-400;
+
+        padding: 15px 0;
+    }
+
+    &__user {
+        @include ds-typography.xl-s24-h33;
+        color: ds-colors.$black-400;
+
+        padding: 14px 20px;
+        margin: 0;
+
+        border-radius: 10px;
+        border: 3px solid rgba(211, 231, 232, 0.52);
+        background: rgba(89, 211, 215, 0.83);
+    }
+}
