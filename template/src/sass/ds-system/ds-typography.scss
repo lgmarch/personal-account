@@ -45,3 +45,7 @@
 @mixin xl-s35-h53 {
   @include font_template(35px, 53px, 500);
 }
+
+@mixin xxl-s18-h26 {
+  @include font_template(18px, 26px, 600);
+}

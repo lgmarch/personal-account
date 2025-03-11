@@ -1,0 +1,46 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.tasks {
+  &__wrapper {
+    width: 1680px;
+
+    margin: 0 auto;
+    padding: 0 120px;
+
+    cursor: pointer; 
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  &__item {
+    flex-shrink: 0;
+
+    width: 360px;
+
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.15));
+  }
+
+  &__img {
+    border-radius: 20px;
+    background: ds-colors.$gray-100;
+  }
+
+  &__title {
+    @include ds-typography.xxl-s18-h26;
+
+    margin: 16px auto 20px;
+  }
+
+  &__description {
+    @include ds-typography.r-s16-h24;
+
+    margin: 0 0 16px;
+  }
+}

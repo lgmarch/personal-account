@@ -10,10 +10,11 @@
 @use "ds-system/ds-variables.scss";
 
 // layout
-@use "layout/content.scss";
 @use "layout/page-header.scss";
+@use "layout/page-main.scss";
 @use "layout/page.scss";
 
 // blocks
+@use "blocks/contract.scss";
 @use "blocks/main-nav.scss";
-@use "blocks/task.scss";
+@use "blocks/tasks.scss";
