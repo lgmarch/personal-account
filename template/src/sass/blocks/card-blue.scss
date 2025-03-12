@@ -1,0 +1,24 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.card-blue {
+    padding: 12px 60px;
+
+    border-radius: 15px;
+    border: 1px solid #34C6CD;
+
+    background: rgba(187, 239, 239, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &__title {
+        @include ds-typography.m-s32-h48;
+        color: ds-colors.$black-900;
+
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        @include ds-typography.m-s32-h48;
+        color: ds-colors.$black-900;
+    }
+}

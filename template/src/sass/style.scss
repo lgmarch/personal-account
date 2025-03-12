@@ -10,11 +10,16 @@
 @use "ds-system/ds-variables.scss";
 
 // layout
-@use "layout/page-header.scss";
+@use "layout/balance-main.scss";
+@use "layout/files-main.scss";
 @use "layout/page-main.scss";
 @use "layout/page.scss";
 
 // blocks
+@use "blocks/basket.scss";
+@use "blocks/card-blue.scss";
+@use "blocks/card-white.scss";
 @use "blocks/contract.scss";
 @use "blocks/main-nav.scss";
+@use "blocks/page-header.scss";
 @use "blocks/tasks.scss";
