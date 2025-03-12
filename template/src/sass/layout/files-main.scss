@@ -1,0 +1,40 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.files-main {
+    &__wrapper {
+        width: 1680px;
+
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+
+    &__title {
+        position: relative;
+
+        @include ds-typography.xxl-s32-h42;
+
+        margin: 0 0 43px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: ds-colors.$green-500;
+        } 
+    }
+
+    &__subtitle {
+        @include ds-typography.m-s22-h33;
+    }
+
+    &__item{
+        a {
+            @include ds-typography.r-s22-h33;
+            color: ds-colors.$black-400;
+        }
+    }
+}
