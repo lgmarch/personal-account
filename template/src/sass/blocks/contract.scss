@@ -5,7 +5,7 @@
     width: 1680px;
 
     margin: 0 auto;
-    padding: 0 120px;
+    padding: 0;
 
     @include ds-typography.r-s22-h33;
     color: ds-colors.$black-400;
@@ -13,7 +13,7 @@
     margin-bottom: 94px;
 
     &__number {
-        @include ds-typography.xl-s22-h33;
+        @include ds-typography.m-s22-h33;
         color: ds-colors.$black-900;
     }
 }

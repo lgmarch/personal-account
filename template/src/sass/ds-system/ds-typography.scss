@@ -22,19 +22,11 @@
   @include font_template(26px, 39px);
 }
 
-@mixin m-s22-h33 {
-  @include font_template(22px, 33px, 500);
-}
-
-@mixin m-s26-h39 {
-  @include font_template(26px, 39px, 500);
-}
-
-@mixin xl-s18-h27 {
+@mixin m-s18-h27 {
   @include font_template(18px, 27px, 500);
 }
 
-@mixin xl-s22-h33 {
+@mixin m-s22-h33 {
   @include font_template(22px, 33px, 500);
 }
 
@@ -42,10 +34,22 @@
   @include font_template(24px, 33px, 500);
 }
 
-@mixin xl-s35-h53 {
+@mixin m-s26-h39 {
+  @include font_template(26px, 39px, 500);
+}
+
+@mixin m-s32-h48 {
+  @include font_template(32px, 48px, 500);
+}
+
+@mixin m-s35-h53 {
   @include font_template(35px, 53px, 500);
 }
 
 @mixin xxl-s18-h26 {
   @include font_template(18px, 26px, 600);
+}
+
+@mixin xxl-s32-h42 {
+  @include font_template(32px, 42px, 600);
 }
