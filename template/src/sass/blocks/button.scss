@@ -1,0 +1,14 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.button {
+    @include ds-typography.r-s26-h39;
+
+    padding: 10px 20px;
+
+    border-radius: 15px;
+    border: 1px solid ds-colors.$green-500;
+    background: ds-colors.$green-200;
+
+    cursor: pointer;
+}

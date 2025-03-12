@@ -1,0 +1,68 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
+
+.support-main {
+    &__wrapper {
+        width: ds-variables.$desktop-width;
+
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+
+    &__title {
+        @include ds-typography.xxl-s32-h42;
+
+        padding-bottom: 70px;
+    }
+
+    &__subtitle {
+        @include ds-typography.m-s26-h39;
+
+        padding-bottom: 35px;
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        gap: 44px;
+    }
+
+    &__description {
+        display: grid;
+        grid-template-columns: 700px 1fr;
+        gap: 103px;
+
+        @include ds-typography.r-s24-h24;
+        span {
+            color: ds-colors.$red-100;
+        }
+    }
+}
+
+.support-main__user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    .input:last-of-type {
+        margin-bottom: 36px;
+    }
+
+    button {
+        margin: auto 0;
+    }
+}
+
+.support-main__user-text {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.support-main__request {
+    display: flex;
+
+    width: 100%;
+    min-height: 290px;
+}

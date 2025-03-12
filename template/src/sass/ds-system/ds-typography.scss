@@ -18,6 +18,14 @@
   @include font_template(22px, 33px);
 }
 
+@mixin r-s24-h24 {
+  @include font_template(24px, 24px);
+}
+
+@mixin r-s24-h38 {
+  @include font_template(24px, 38px);
+}
+
 @mixin r-s26-h39 {
   @include font_template(26px, 39px);
 }
