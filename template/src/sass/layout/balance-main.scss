@@ -1,9 +1,10 @@
 @use "ds-system/ds-colors";
 @use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
 
 .balance-main {
     &__container{
-        width: 1680px;
+        width: ds-variables.$desktop-width;
 
         margin: 0 auto;
         padding: 0 120px;
@@ -30,7 +31,7 @@
         padding: 30px 66px;
 
         border-radius: 15px;
-        border: 1px solid #34C6CD;
+        border: 1px solid ds-colors.$green-500;
 
         background: rgba(187, 239, 239, 0.24);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
