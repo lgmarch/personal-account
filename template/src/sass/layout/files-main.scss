@@ -1,9 +1,10 @@
 @use "ds-system/ds-colors";
 @use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
 
 .files-main {
     &__wrapper {
-        width: 1680px;
+        width: ds-variables.$desktop-width;
 
         margin: 0 auto;
         padding: 0 120px;
