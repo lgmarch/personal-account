@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Личный кабинет SkyScada</title>
+        <link rel="stylesheet" href="css/style.min.css">
+        <script type="module" src="js/script.min.js"></script>
+    </head>
+
+    <body class="page__body">
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="user-index.html">
+                    <img class="page-header__logo-image" src="img/logo.svg" width="133" height="83" alt="СкайСкада">
+                </a>
+                <nav class="main-nav">
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                        <li class="main-nav__item">
+                            <a href="user-index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="balance.html">
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="services.html">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="history.html">
+                                История операций
+                            </a>
+                        </li>
+                        </ul>
+
+                        <p class="main-nav__user">ООО "НаноИнжиниринг"</p>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="services-choice">
+            <h2 class="visually-hidden">Выбор услуг</h2>
+            <div class="services-choice__wrapper">
+                <section class="services-choice__contract contract">
+                    <h2 class="visually-hidden">Номер договора</h2>
+                    Номер Договора: <span class="contract__number">7012315012024</span>
+                </section> 
+
+                <div class="services-choice__scroll">
+                    <h3 class="services-choice__title">Выберите требуемые услуги</h3>
+                    <ul class="services-choice__content scroll">
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Объём данных обмена</p>
+                                <div class="action">                                   
+                                    <p class="card-top__description">Количество тегов</p>
+                                    <button class="action__decrement button">−</button> 
+                                    <input class="action__input card-top__description" type="text" value="99000">        
+                                    <button class="action__increment button">+</button>
+                                    <p class="card-top__description">Максимальное количество тегов 99999</p>                                         
+                                
+                                    <p class="card-top__description">Количество клиентов</p>
+                                    <button class="action__decrement button">−</button>   
+                                    <input class="action__input card-top__description" type="text" value="55">   
+                                    <button class="action__increment button">+</button>
+                                    <p class="card-top__description">Максимальное количество клиентов 99</p>                                          
+                                </div>  
+                            </div>                      
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Архивирование</p>
+                                <div class="action">                                   
+                                    <p class="card-top__description">Периодичность</p>
+                                    <button class="action__decrement button">−</button> 
+                                    <input class="action__input card-top__description" type="text" id="counterValue" value="5">        
+                                    <button class="action__increment button">+</button>
+                                    <p class="card-top__description">Минуты</p>                                         
+                                
+                                    <p class="card-top__description">Глубина</p>
+                                    <button class="action__decrement button">−</button>   
+                                    <input class="action__input card-top__description" type="text" id="counterValue" value="10">    
+                                    <button class="action__increment button">+</button>
+                                    <p class="card-top__description">Месяц</p>                                          
+                                </div>                                 
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Дата провайдеры</p>
+                                <p class="card-top__description">
+                                    Modbus TCP, Эмулятор случайных значений, Эмулятор статический, K2, Контар, OPC UA, Сименс, Пинг, Водоприбор, MSSQL, RabbitMQ-источник, RabbitMQ-приёмник, МЭК-104, MQTT, ONNX, SNMP, Kafka-источник, Kafka-приемник
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Создание схем</p>
+                                <p class="card-top__description">
+                                    2D схема, 3D-схема, Zulu-схема
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Дата провайдеры</p>
+                                <ul class="services-choice__provider">
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox checked">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Modbus TCP
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box check"></span>
+                                            Эмулятор случайных значений
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox  checked">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box check"></span>
+                                            Эмулятор статический
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box check"></span>
+                                            K2
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box check"></span>
+                                            Контар
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            OPC UA
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Сименс
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Пинг
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Водоприбор
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            MSSQL
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            RabbitMQ-источник
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            RabbitMQ-приёмник
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            МЭК-104
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            MQTT
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            ONNX
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            SNMP
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Kafka-источник
+                                        </label>                                        
+                                    </li>
+
+                                    <li class="checkbox-container">                                       
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox">
+                                            <span class="checkbox__box"></span>
+                                            Kafka-приемник
+                                        </label>                                        
+                                    </li>
+                                </ul>
+                            </div>  
+
+                        </li>
+                    </ul>
+                    <button class="services-choice__button button" type="button">Сохранить</button>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

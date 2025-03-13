@@ -1,0 +1,42 @@
+@use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
+
+.services-choice {
+    &__wrapper {
+        width: ds-variables.$desktop-width;
+
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+}
+
+.services-choice__title {
+    @include ds-typography.m-s32-h48;
+
+    margin-bottom: 40px;
+}
+
+.services-choice__scroll {
+    margin-bottom: 60px;
+}
+
+.services-choice__provider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+
+    max-height: 420px;
+}
+
+.services-choice__content {
+    margin-bottom: 40px;
+
+    &__button {
+        align-self: self-end;
+    }
+}
+
+.services-choice__button {
+    align-self: end;
+}

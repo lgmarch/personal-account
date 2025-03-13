@@ -14,10 +14,12 @@
 @use "layout/files-main.scss";
 @use "layout/page-main.scss";
 @use "layout/page.scss";
+@use "layout/services-choice.scss";
 @use "layout/services-main.scss";
 @use "layout/support-main.scss";
 
 // blocks
+@use "blocks/action.scss";
 @use "blocks/basket.scss";
 @use "blocks/button.scss";
 @use "blocks/card-blue.scss";
