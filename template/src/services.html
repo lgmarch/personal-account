@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Личный кабинет SkyScada</title>
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+
+    <body class="page__body">
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="user-index.html">
+                    <img class="page-header__logo-image" src="img/logo.svg" width="133" height="83" alt="СкайСкада">
+                </a>
+                <nav class="main-nav">
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                        <li class="main-nav__item">
+                            <a href="user-index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="balance.html">
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="history.html">
+                                История операций
+                            </a>
+                        </li>
+                        </ul>
+
+                        <p class="main-nav__user">ООО "НаноИнжиниринг"</p>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="services-main">
+            <h2 class="visually-hidden">Выбор услуг</h2>
+            <div class="services-main__wrapper">
+                <section class="services-main__contract contract">
+                    <h2 class="visually-hidden">Номер договора</h2>
+                    Номер Договора: <span class="contract__number">7012315012024</span>
+                </section> 
+
+                <div class="services-main__scroll">
+                    <h3 class="services-main__title">Услуги</h3>
+                    <ul class="scroll__content scroll">
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Объём данных обмена</p>
+                                <p class="card-top__description">
+                                    Количество тегов, Количество клиентов
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Архивирование</p>
+                                <p class="card-top__description">
+                                    Периодичность, Глубина
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Дата провайдеры</p>
+                                <p class="card-top__description">
+                                    Modbus TCP, Эмулятор случайных значений, Эмулятор статический, K2, Контар, OPC UA, Сименс, Пинг, Водоприбор, MSSQL, RabbitMQ-источник, RabbitMQ-приёмник, МЭК-104, MQTT, ONNX, SNMP, Kafka-источник, Kafka-приемник
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Создание схем</p>
+                                <p class="card-top__description">
+                                    2D схема, 3D-схема, Zulu-схема
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                        <li class="scroll__item card-top">
+                            <div class="card-top__wrapper">
+                                <p class="card-top__title">Функции</p>
+                                <p class="card-top__description">
+                                    Группы архивирования, Классификатор событий, Рекомендации, Обмен между провайдерами
+                                </p>                                
+                            </div>                        
+                            <button class="card-top__button button">Выбрать</button>                
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="services-main__card-white card-white">
+                    <p class="card-white__subtitle">
+                        <b>Ограничения!</b> Частота записи архива (не чаще, чем раз в минуту) и с ограничением на длительность хранения архивных данных. Выдаётся на месяц и продлевается ежемесячно.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

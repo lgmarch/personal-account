@@ -14,6 +14,7 @@
 @use "layout/files-main.scss";
 @use "layout/page-main.scss";
 @use "layout/page.scss";
+@use "layout/services-main.scss";
 @use "layout/support-main.scss";
 
 // blocks
@@ -28,5 +29,6 @@
 @use "blocks/main-nav.scss";
 @use "blocks/operations.scss";
 @use "blocks/page-header.scss";
+@use "blocks/scroll.scss";
 @use "blocks/tasks.scss";
 @use "blocks/textarea.scss";

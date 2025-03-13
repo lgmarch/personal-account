@@ -1,0 +1,22 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
+
+.services-main {
+    &__wrapper {
+        width: ds-variables.$desktop-width;
+
+        margin: 0 auto;
+        padding: 0 120px;
+    }
+}
+
+.services-main__title {
+    @include ds-typography.m-s32-h48;
+
+    margin-bottom: 40px;
+}
+
+.services-main__scroll {
+    margin-bottom: 60px;
+}
