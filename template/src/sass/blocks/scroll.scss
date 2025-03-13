@@ -3,19 +3,16 @@
 
 .scroll {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
 
     width: 100%;
     max-height: ds-variables.$scrollbar-height;
 
     padding: 10px;    
 
-    overflow: auto;
-}
-  
-.scroll__content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    overflow: auto;  
 }
   
 .scroll__item {
@@ -27,12 +24,14 @@
 }
   
 .scroll::-webkit-scrollbar-track {
-    background: #e0e0e0;
+    background: ds-colors.$gray-300;
+    border: 1px solid ds-colors.$green-100;
     border-radius: 5px;
 }
   
 .scroll::-webkit-scrollbar-thumb {
-    background: ds-colors.$gray-300;
+    background: ds-colors.$gray-100;
+    border: 1px solid ds-colors.$green-100;
     border-radius: 5px;
 }
   
