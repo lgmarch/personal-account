@@ -11,4 +11,8 @@
     background: ds-colors.$green-200;
 
     cursor: pointer;
+
+    &:hover {
+        background-color: ds-colors.$green-800;
+    }
 }

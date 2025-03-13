@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Личный кабинет SkyScada</title>
         <link rel="stylesheet" href="css/style.min.css">
+        <script src="js/main.js"></script>
     </head>
     
     <body class="page__body">
@@ -26,7 +27,7 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a href="#">
+                  <a href="services.html">
                     Услуги
                   </a>
                 </li>
@@ -53,7 +54,9 @@
               <input class="input" type="text" placeholder="Ваше имя (User Name)">
               <input class="input" type="text" placeholder="Телефон">
               <input class="input" type="text" placeholder="Email (User@host)">
-              <button class="button">Приложить файл(ы)</button>
+              <button class="button" id="uploadButton">Приложить файл(ы)</button>
+              <input type="file" id="fileInput" class="visually-hidden" multiple />
+
             </div>
 
             <div class="support-main__user-text">
