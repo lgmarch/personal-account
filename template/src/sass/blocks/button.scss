@@ -12,7 +12,11 @@
 
     cursor: pointer;
 
+    &.button__light {
+        background-color: ds-colors.$green-800; 
+    }
+
     &:hover {
-        background-color: ds-colors.$green-800;
+        background-color: ds-colors.$white-900;
     }
 }
