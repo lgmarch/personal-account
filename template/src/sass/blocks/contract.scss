@@ -2,11 +2,6 @@
 @use 'ds-system/ds-colors.scss';
 
 .contract {
-    width: 1680px;
-
-    margin: 0 auto;
-    padding: 0;
-
     @include ds-typography.r-s22-h33;
     color: ds-colors.$black-400;
 
