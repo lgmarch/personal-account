@@ -1,17 +1,13 @@
 @use 'ds-system/ds-colors.scss';
 @use "ds-system/ds-typography";
 
-.page {
+.page__body {
     height: 100%;
 
     font-family: "Montserrat", "Arial", sans-serif;
     color: ds-colors.$black-900;
     @include ds-typography.r-s16-h24;
 
-    text-rendering: optimizeLegibility;
-}
-
-.page__body {
     margin: 10px auto 10px;
 
     background-color: ds-colors.$green-400;
