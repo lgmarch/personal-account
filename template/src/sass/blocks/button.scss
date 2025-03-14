@@ -2,6 +2,7 @@
 @use "ds-system/ds-typography";
 
 .button {
+    box-sizing: border-box;
     @include ds-typography.r-s26-h39;
 
     padding: 10px 20px;

@@ -2,23 +2,24 @@
 @use "ds-system/ds-typography";
 
 .input {
-    @include ds-typography.r-s24-h38;
+  box-sizing: border-box;
+  @include ds-typography.r-s24-h38;
 
-    padding: 10px 15px;
+  padding: 10px 15px;
 
-    border-radius: 12px;
-    border: 1px solid ds-colors.$gray-200;
-    background: ds-colors.$white-900;
-    outline: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  
-    &:focus {
-      border-color: ds-colors.$gray-200;
-      box-shadow: 0 0 8px rgba(52, 198, 205, 0.5);
-    }
-  
-    &::placeholder {
-      color: ds-colors.$black-900;
-      font-style: italic;
-    }
+  border-radius: 12px;
+  border: 1px solid ds-colors.$gray-200;
+  background: ds-colors.$white-900;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:focus {
+    border-color: ds-colors.$gray-200;
+    box-shadow: 0 0 8px rgba(52, 198, 205, 0.5);
+  }
+
+  &::placeholder {
+    color: ds-colors.$black-900;
+    font-style: italic;
+  }
 }
