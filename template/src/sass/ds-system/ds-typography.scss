@@ -1,0 +1,63 @@
+@mixin font_template($font-size, $line-height, $font-weight: 400) {
+  font-family: inherit;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: normal;
+  line-height: $line-height;
+}
+
+@mixin r-s16-h24 {
+  @include font_template(16px, 24px);
+}
+
+@mixin r-s20-h30 {
+  @include font_template(20px, 30px);
+}
+
+@mixin r-s22-h33 {
+  @include font_template(22px, 33px);
+}
+
+@mixin r-s24-h24 {
+  @include font_template(24px, 24px);
+}
+
+@mixin r-s24-h38 {
+  @include font_template(24px, 38px);
+}
+
+@mixin r-s26-h39 {
+  @include font_template(26px, 39px);
+}
+
+@mixin m-s18-h27 {
+  @include font_template(18px, 27px, 500);
+}
+
+@mixin m-s22-h33 {
+  @include font_template(22px, 33px, 500);
+}
+
+@mixin xl-s24-h33 {
+  @include font_template(24px, 33px, 500);
+}
+
+@mixin m-s26-h39 {
+  @include font_template(26px, 39px, 500);
+}
+
+@mixin m-s32-h48 {
+  @include font_template(32px, 48px, 500);
+}
+
+@mixin m-s35-h53 {
+  @include font_template(35px, 53px, 500);
+}
+
+@mixin xxl-s18-h26 {
+  @include font_template(18px, 26px, 600);
+}
+
+@mixin xxl-s32-h42 {
+  @include font_template(32px, 42px, 600);
+}

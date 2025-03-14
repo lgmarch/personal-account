@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Личный кабинет SkyScada</title>
+      <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="user-index.html">
+            <img class="page-header__logo-image" src="img/logo.svg" width="133" height="83" alt="СкайСкада">
+        </a>
+        <nav class="main-nav"></nav>
+      </div>
+    </header>
+
+    <section class="index"></section>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-container">
+        <h2 class="modal__title">Добро пожаловать<br>в Личный кабинет SkySCADA</h2>
+        <p class="modal__description">Введите свой логин и пароль, чтобы войти</p>
+        <form class="modal__form" action="https://SkySCADA.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="modal__input modal__input--icon-user input" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class=" modal__input modal__input--icon-password input" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <div class="modal__buttons">
+            <a class="modal__button button" href="user-index.html" type="submit">Войти</a>
+            <p class="modal__help">
+              <a class="modal__restore" href="#">Восстановить пароль</a>
+            </p>
+          </div>
+        </form>         
+      </div>
+
+    </div>
+  </body>
+</html>

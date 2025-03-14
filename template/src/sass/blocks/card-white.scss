@@ -1,0 +1,32 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.card-white {
+    padding: 30px;
+
+    border-radius: 15px;
+    border: 1px solid ds-colors.$green-500;
+    background: ds-colors.$white-900;
+
+    &__title {
+        @include ds-typography.m-s26-h39;
+        color: ds-colors.$black-900;
+
+        padding-bottom: 20px;
+    }
+
+    &__subtitle {
+        @include ds-typography.m-s32-h48;
+        color: ds-colors.$black-900;
+    }
+
+    &__description {       
+        @include ds-typography.r-s20-h30;
+
+        padding-bottom: 10px;
+    }
+
+    &__description:last-of-type {
+        padding-bottom: 40px;
+    }
+}

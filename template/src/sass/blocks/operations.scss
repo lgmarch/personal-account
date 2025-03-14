@@ -1,0 +1,48 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.operations__data-list:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.operations {
+    padding: 20px;
+
+    border-radius: 15px;
+    border: 1px solid ds-colors.$green-500;
+    background: ds-colors.$white-900;
+
+    &__data {
+        @include ds-typography.m-s32-h48;
+        color: ds-colors.$black-900;
+
+        padding-bottom: 20px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    &__type {
+        @include ds-typography.m-s26-h39;
+        color: ds-colors.$black-900;
+
+        margin: auto 0;
+    }
+
+    &__coast {       
+        @include ds-typography.m-s26-h39;
+
+        padding: 10px;
+
+        &.plus {
+            color: ds-colors.$green-100;
+        }
+
+        &.minus {
+            color: ds-colors.$red-100;
+        }
+    }
+}

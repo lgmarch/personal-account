@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Личный кабинет SkyScada</title>
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+
+    <body class="page__body">
+        <header class="page-header">
+            <div class="page-header__wrapper">
+                <a class="page-header__logo" href="user-index.html">
+                    <img class="page-header__logo-image" src="img/logo.svg" width="133" height="83" alt="СкайСкада">
+                </a>
+                <nav class="main-nav">
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                        <li class="main-nav__item">
+                            <a href="user-index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="balance.html">
+                                Баланс
+                            </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="services.html">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a href="#">
+                                История операций
+                            </a>
+                        </li>
+                        </ul>
+
+                        <p class="main-nav__user">ООО "НаноИнжиниринг"</p>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="balance-main">
+            <div class="balance-main__container">
+                <h2 class="visually-hidden">Баланс счета, оплаченные услуги</h2>
+                <section class="contract">
+                    Номер Договора: <span class="contract__number">7012315012024</span>
+                </section> 
+    
+                <div class="balance-main__wrapper">           
+                    <div class="balance-main__card card-blue">
+                        <h3 class="card-blue__title">Баланс счета:</h3>
+                        <p class="card-blue__description">999.00 ₽</p>
+                    </div>
+    
+                    <div class="balance-main__account card-white">
+                        <h3 class="card-white__title">Платёжные реквизиты</h3>
+                        <p class="card-white__description">АО "АЛЬФА-БАНК" г Москва</p>
+                        <p class="card-white__description">БИК 044525593</p>
+                        <p class="card-white__description">Сч. № 30101810200000000593</p>
+                        <p class="card-white__description">ООО "РТК АВТОМАТИКА"</p>
+                        <p class="card-white__description">ИНН 9719006061</p>
+                        <p class="card-white__description">КПП 771901001</p>
+                        <p class="card-white__description">Сч. № 40702810102680004691</p>
+                        <img class="card-white__img" src="img/qr.png" alt="QR код">
+                    </div>           
+    
+                    <div class="balance-main__invoice">
+                        <h3 class="balance-main__subtitle">История финансовых операций</h3>
+
+                        <ul class="operations__wrapper">
+                            <li class="operations__data-list">
+                                <div class="operations">
+                                    <h4 class="operations__data">10 марта, пн</h4>
+                                    <ul class="operations__list">
+                                        
+                                        <li class="operations__item">
+                                            <div class="operations__type">
+                                                Зачислено на счёт
+                                            </div>
+                                            <div class="operations__coast plus">
+                                                +60 000 ₽
+                                            </div>
+                                        </li>
+
+                                        <li class="operations__item">
+                                            <div class="operations__type">
+                                                Зачислено на счёт
+                                            </div>
+                                            <div class="operations__coast plus">
+                                                +10 120 ₽
+                                            </div>
+                                        </li>
+
+                                        <li class="operations__item">
+                                            <div class="operations__type">
+                                                Списано со счёта
+                                            </div>
+                                            <div class="operations__coast minus">
+                                                -57 120 ₽
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </li>
+                            
+                            <li class="operations__data-list">
+                                <div class="operations">
+                                    <h4 class="operations__data">10 марта, пн</h4>
+                                    <ul class="operations__list">
+                                        <li class="operations__item">
+                                            <div class="operations__type">
+                                                Списано со счёта
+                                            </div>
+                                            <div class="operations__coast minus">
+                                                -57 120 ₽
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+    </body>
+</html>

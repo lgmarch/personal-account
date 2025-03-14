@@ -1,0 +1,15 @@
+.action {
+    display: grid;
+    grid-template-columns: 300px 60px 80px 60px 1fr;
+    grid-template-rows: 2;
+    row-gap: 40px;
+    column-gap: 20px;
+    align-items: center;
+
+    &__input {
+        text-align: center;
+        border: none;
+        outline: none;
+        background-color: inherit;
+    }
+}

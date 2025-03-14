@@ -1,0 +1,62 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+@use "ds-system/ds-variables";
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    &__title {
+        @include ds-typography.r-s26-h39;
+        text-align: center;
+
+        margin-bottom: 34px;
+    }
+
+    &__description{
+        @include ds-typography.r-s16-h24;
+        text-align: center;
+
+        margin-bottom: 14px;
+    }
+
+    &__input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__button {
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    &__help {
+        @include ds-typography.r-s16-h24;
+        text-align: center;
+
+        padding: 10px;
+    }
+}
+
+.modal-container {
+    display: flex;   
+    flex-direction: column; 
+    align-items: stretch;
+
+    padding: 34px 56px;
+    background: white;
+    
+    border-radius: 10px;
+    width: 550px;
+}

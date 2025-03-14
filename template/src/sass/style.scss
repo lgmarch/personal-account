@@ -1,0 +1,37 @@
+@use "fonts.scss";
+@use "scaffolding.scss";
+
+// libs
+@use "libs/normalize.scss";
+
+// ds-system
+@use "ds-system/ds-colors.scss";
+@use "ds-system/ds-typography.scss";
+@use "ds-system/ds-variables.scss";
+
+// layout
+@use "layout/balance-main.scss";
+@use "layout/files-main.scss";
+@use "layout/page-main.scss";
+@use "layout/page.scss";
+@use "layout/services-choice.scss";
+@use "layout/services-main.scss";
+@use "layout/support-main.scss";
+
+// blocks
+@use "blocks/action.scss";
+@use "blocks/basket.scss";
+@use "blocks/button.scss";
+@use "blocks/card-blue.scss";
+@use "blocks/card-top.scss";
+@use "blocks/card-white.scss";
+@use "blocks/checkbox.scss";
+@use "blocks/contract.scss";
+@use "blocks/input.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/modal.scss";
+@use "blocks/operations.scss";
+@use "blocks/page-header.scss";
+@use "blocks/scroll.scss";
+@use "blocks/tasks.scss";
+@use "blocks/textarea.scss";

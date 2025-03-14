@@ -1,0 +1,35 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.card-top {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;    
+    align-items: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: ds-colors.$gray-100;
+    }
+
+    &__title {
+        @include ds-typography.m-s32-h48;
+
+        margin: 20px 0 15px;
+    }
+
+    &__description {
+        @include ds-typography.r-s26-h39;
+    }
+
+    &__button {
+        justify-self: end;
+    }
+}

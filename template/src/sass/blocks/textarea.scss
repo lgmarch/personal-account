@@ -1,0 +1,25 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.textarea {
+    box-sizing: border-box;
+    @include ds-typography.r-s24-h38;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 10px 15px;
+
+    resize: none;
+
+    border-radius: 12px;
+    border: 1px solid ds-colors.$gray-200;
+    background: ds-colors.$white-900;
+    outline: none;
+
+    &:focus {
+        border-color: #2196F3;
+        background-color: #f1fbfd;
+        box-shadow: 0 0 8px ds-colors.$shadow-400;
+    }
+}

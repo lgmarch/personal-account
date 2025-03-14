@@ -1,0 +1,14 @@
+@use "ds-system/ds-typography";
+@use 'ds-system/ds-colors.scss';
+
+.contract {
+    @include ds-typography.r-s22-h33;
+    color: ds-colors.$black-400;
+
+    margin-bottom: 94px;
+
+    &__number {
+        @include ds-typography.m-s22-h33;
+        color: ds-colors.$black-900;
+    }
+}

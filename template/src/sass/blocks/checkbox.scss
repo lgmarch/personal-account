@@ -1,0 +1,45 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    @include ds-typography.r-s26-h39;
+
+    cursor: pointer;
+    user-select: none;
+
+    &__input {
+        display: none;
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+
+        width: 20px;
+        height: 20px;
+
+        border-radius: 3.5px;
+        border: 1px solid ds-colors.$green-500;     
+        background: ds-colors.$white-900;
+
+        &::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: ds-colors.$green-500;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    &.checked &__box::after,
+    &__input:checked + &__box::after {
+        opacity: 1;
+    }
+}

@@ -19,6 +19,10 @@ install_frontend_dependencies:
 	cd frontend; echo "...Installing client dependencies" && \
 	npm install
 
+install_template_dependencies:
+	cd template; echo "...Installing template dependencies" && \
+	npm i
+
 install_root_dependencies:
 	npm install; echo "...Installing root dependencies"
 

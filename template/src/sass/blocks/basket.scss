@@ -1,0 +1,53 @@
+@use "ds-system/ds-colors";
+@use "ds-system/ds-typography";
+
+.basket {
+    padding: 19px 31px;
+    border-radius: 15px;
+    border: 1px solid #34C6CD;
+
+    background: ds-colors.$white-900;
+}
+
+.basket__title {
+    position: relative;
+
+    @include ds-typography.m-s26-h39;
+    color: ds-colors.$black-900;
+
+    margin: 0 0 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: ds-colors.$green-500;
+    } 
+}
+
+.basket__item {
+    position: relative;
+
+    @include ds-typography.r-s26-h39;
+    color: ds-colors.$black-900;
+
+    padding: 5px 0 5px 30px;
+
+    &.basket__circle::before {
+        content: "";
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+
+        width: 10px;
+        height: 10px;
+
+        border-radius: 3.5px;
+        border: 1px solid #34C6CD;
+        
+        background: #7DE1E1;
+    } 
+}
